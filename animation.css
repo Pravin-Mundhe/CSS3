@@ -1,0 +1,56 @@
+div{
+    height: 150px;
+    width: 200px;
+    font-size: 30px;
+    background-color: pink;
+    position: absolute;
+    top:100px;
+    left: 200px;
+    /*transition-property: all;*/
+    /*transition-duration: 2s;*/
+    /*transition-timing-function: ease-in;*/
+    /*transition-delay: 1s;*/
+    /*transition: all 2s ease-in;*/
+    /*animation-name: positionAnimate;*/
+    /*animation-duration: 2s;*/
+    /*!*animation-timing-function: ease-in;*!*/
+    /*animation-delay: 0s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: alternate-reverse;*/
+    animation: positionAnimate 2s linear 1s infinite normal;
+
+}
+@keyframes positionAnimate {
+    0%{
+        left: 0px;
+        background-color: yellow;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        left: 200px;
+        background-color: red;
+    }
+}
+/*@keyframes positionAnimate {*/
+/*    from{*/
+/*        left: 0px;*/
+/*        background-color: yellow;*/
+/*    }*/
+/*    to{*/
+/*        left: 200px;*/
+/*        background-color: red;*/
+/*    }    */
+/*}*/
+div:hover{
+    /*background-color: red;*/
+    /*color: white;*/
+    /*transform: scale(2);*/
+    /*rotate: 180deg;*/
+    /*transform: translate(150px);*/
+    /*transform: skew(45deg);*/
+}
+/*div:active{*/
+/*    background-color: yellow;*/
+/*}*/
